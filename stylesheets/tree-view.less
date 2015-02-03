@@ -5,8 +5,15 @@
   background: @tree-view-background-color;
 
   .selected:before {
-  	background: darken(@background-color-selected, 10%);
+  	background: @background-color-highlight;
+//    background: darken(@background-color-selected, 10%);
     box-shadow: inset -3px 0 0 rgba(0,0,0, .05);
+  }
+}
+
+.tree-view-resizer {
+  .tree-view-resize-handle {
+    width: 8px;
   }
 }
 
@@ -20,7 +27,8 @@
     background: @tab-background-color-active;
 
     .selected:before {
-      background: darken(@background-color-selected, 10%);
+      background: @background-color-highlight;
+//      background: darken(@background-color-selected, 10%);
     }
 
     .selected > .name,
@@ -29,5 +37,12 @@
     .selected > .list-item > .name:before {
       color: #fff !important;
     }
+  }
+}
+
+[data-show-on-right-side=true] {
+  .tree-view .selected:before,
+  .focusable-panel {
+    box-shadow: inset 3px 0 0 rgba(0,0,0, .05);
   }
 }

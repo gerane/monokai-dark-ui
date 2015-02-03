@@ -2,7 +2,7 @@
   "name": "monokai-dark-ui",
   "theme": "ui",
   "version": "0.0.0",
-  "description": "Default dark theme for interface components",
+  "description": "A very Dark Monokai UI",
   "license": "MIT",
   "repository": "https://github.com/atom/atom-dark-ui",
   "engines": {
